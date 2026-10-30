@@ -1,0 +1,11 @@
+{
+  "executadoEm": "2026-10-30T02:01:10.345Z",
+  "sourceSha": "TRABALHO_NAO_COMMITADO",
+  "servidor": "JAR real em duas execuções",
+  "banco": "H2 em arquivo descartável com WRITE_DELAY=0",
+  "recursoPreservado": true,
+  "reservaPreservada": true,
+  "loginOriginalAposReinicio": true,
+  "reinicioSemSenhaBootstrap": true,
+  "aprovado": true
+}
