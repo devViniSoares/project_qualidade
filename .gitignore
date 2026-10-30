@@ -1,0 +1,9 @@
+/target/
+/data/
+/.tools/
+/.mvn/wrapper/apache-maven-*/
+/.idea/
+*.iml
+.env
+*.log
+/performance-local/

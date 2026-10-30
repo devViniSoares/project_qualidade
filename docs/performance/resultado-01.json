@@ -1,0 +1,44 @@
+{
+  "executadoEm": "2026-10-30T01:46:34.552Z",
+  "sourceSha": "SEM_COMMIT",
+  "node": "v22.14.0",
+  "plataforma": "win32",
+  "baseUrl": "http://127.0.0.1:8080",
+  "cenario": "disponibilidade autenticada e disputa pelo mesmo horário",
+  "aquecimento": 10,
+  "requisicoes": 200,
+  "concorrencia": 10,
+  "duracaoMs": 1851.48,
+  "p50Ms": 88.99,
+  "p95Ms": 110.96,
+  "maxMs": 115.97,
+  "requisicoesPorSegundo": 108.02,
+  "status": {
+    "200": 200
+  },
+  "erros": 0,
+  "disputa": {
+    "tentativas": 10,
+    "criadas": 1,
+    "conflitos": 9,
+    "status": [
+      409,
+      201,
+      409,
+      409,
+      409,
+      409,
+      409,
+      409,
+      409,
+      409
+    ]
+  },
+  "criterios": {
+    "p95MaxMs": 1500,
+    "errosMax": 0,
+    "reservasSimultaneasMax": 1
+  },
+  "aprovado": true,
+  "limitacao": "Teste local em instância única, banco descartável. Não representa capacidade de produção."
+}
