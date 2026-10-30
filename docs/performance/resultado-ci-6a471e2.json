@@ -1,0 +1,44 @@
+{
+  "executadoEm": "2026-10-30T02:03:50.840Z",
+  "sourceSha": "6a471e2ee1df570ac62a0f43dfe42b32166de99b",
+  "node": "v22.23.4",
+  "plataforma": "linux",
+  "baseUrl": "http://127.0.0.1:8080",
+  "cenario": "disponibilidade autenticada e disputa pelo mesmo horário",
+  "aquecimento": 10,
+  "requisicoes": 200,
+  "concorrencia": 10,
+  "duracaoMs": 4451.58,
+  "p50Ms": 230.31,
+  "p95Ms": 282.62,
+  "maxMs": 318,
+  "requisicoesPorSegundo": 44.93,
+  "status": {
+    "200": 200
+  },
+  "erros": 0,
+  "disputa": {
+    "tentativas": 10,
+    "criadas": 1,
+    "conflitos": 9,
+    "status": [
+      409,
+      409,
+      201,
+      409,
+      409,
+      409,
+      409,
+      409,
+      409,
+      409
+    ]
+  },
+  "criterios": {
+    "p95MaxMs": 1500,
+    "errosMax": 0,
+    "reservasSimultaneasMax": 1
+  },
+  "aprovado": true,
+  "limitacao": "Teste local em instância única, banco descartável. Não representa capacidade de produção."
+}

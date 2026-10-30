@@ -24,3 +24,9 @@ Relatórios: `target/surefire-reports/TEST-*.xml`, `target/site/jacoco/index.htm
 Às 23h01 de 29/10/2026, o [teste de duas execuções do JAR](persistencia-local.json) confirmou recurso, reserva e login preservados, reiniciando sem senha de bootstrap. O primeiro ensaio detectou perda da reserva ao interromper imediatamente o processo com WRITE_DELAY padrão do H2. A configuração foi corrigida para WRITE_DELAY=0 e a repetição passou. Script reproduzível: `node scripts/persistencia.mjs`, porta 8082 livre.
 
 Sem teste de penetração, múltiplas instâncias, acessibilidade assistiva ou escala de produção. O relatório final exige CI, revisão humana e SonarCloud.
+
+## Validação externa e clone novo
+
+O [CI do commit 6a471e2](https://github.com/devViniSoares/project_qualidade/actions/runs/40989369102) passou em Ubuntu/Temurin Java 21: 24 testes, gate JaCoCo, documentação, persistência e carga. O job Sonar foi ignorado por configuração ausente, portanto não comprova Quality Gate.
+
+O [clone novo](../entrega/validacao-clone.md) repetiu o verify e o teste real do JAR, com `sourceSha` conferido. As execuções avaliam 6a471e2; não são evidência de uma tag ou de futuros commits.

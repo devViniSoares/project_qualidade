@@ -11,14 +11,14 @@ A referência CineSenac foi clonada separadamente no commit `f8090eee219694b3223
 | Item | Existe | Atualizado | Caminho/evidência |
 |---|---|---|---|
 | Repositório público | Sim | Sim | [GitHub](https://github.com/devViniSoares/project_qualidade) |
-| Revisão por pares | Pendente | Não | Pull request da branch da prática, exige revisão humana |
+| Revisão por pares | Pendente | PR aberto | [PR #1](https://github.com/devViniSoares/project_qualidade/pull/1), exige revisão humana |
 | Aplicação Java | Sim | Teste local aprovado | [pom.xml](../../pom.xml), [código](../../src/main/java/br/edu/senac/recursos/) |
-| README reproduzível | Sim | Novo clone final pendente | [README](../../README.md) |
+| README reproduzível | Sim | Clone novo 6a471e2 aprovado | [README](../../README.md), [validação](validacao-clone.md) |
 | API documentada | Sim | Sim | [Contrato](../api.md) |
 | RTM | Sim | Sim | [Matriz](../rtm.md), [requisitos](../requisitos.md) |
 | Contexto, componentes e sequências | Sim | Sim | [Diagramas](../arquitetura.md) |
 | Plano e relatório de testes | Sim | Execução local | [Plano](../testes/plano.md), [relatório](../testes/relatorio.md) |
-| Pipeline CI | Sim | Configurado; consultar execução | [Workflow](../../.github/workflows/ci.yml) |
+| Pipeline CI | Sim | Verificações aprovadas na branch, Sonar ignorado | [Execução](https://github.com/devViniSoares/project_qualidade/actions/runs/40989369102), [workflow](../../.github/workflows/ci.yml) |
 | JaCoCo | Sim | 99,29% local inicial | [Relatório](../testes/relatorio.md), artifact do CI por SHA |
 | SonarCloud | Parcial | Configuração externa pendente | Job sonar, variables e secret necessários |
 | Plano e resultado de carga | Sim | Execução local | [Plano](../performance/plano.md), [resultado](../performance/resultado-01.md) |
@@ -32,7 +32,7 @@ A referência CineSenac foi clonada separadamente no commit `f8090eee219694b3223
 ## Bloqueadores por prioridade
 
 1. Revisão humana do diff e aceite das premissas de requisitos.
-2. CI e artifacts do commit proposto e, após merge revisado, da main.
+2. CI e artifacts da main após merge revisado; a branch 6a471e2 já passou no CI.
 3. Configuração e Quality Gate SonarCloud comprovado no mesmo SHA.
 4. Navegação visual e verificações pendentes do plano de testes.
 5. Tag anotada somente após os critérios, sem mover tags existentes.

@@ -8,7 +8,7 @@ Data: 29/10/2026. Tag avaliada: **nenhuma**. Minuta técnica, sem assinatura/ace
 
 | Critério | Evidência | Resultado |
 |---|---|---|
-| Build e testes | [Relatório](testes/relatorio.md), 24 testes | Aprovado localmente, confirmar commit remoto |
+| Build e testes | [CI 6a471e2](https://github.com/devViniSoares/project_qualidade/actions/runs/40989369102), 24 testes e [clone novo](entrega/validacao-clone.md) | Aprovado na branch; falta main revisada |
 | Cobertura ≥ 80% | JaCoCo inicial: 139/140 linhas | Aprovado localmente |
 | Reservas sem conflito numa instância | 12 threads e [carga](performance/resultado-01.md) | Aprovado no ambiente medido |
 | CI verde na main do commit da tag | Sem tag avaliada | Não atendido |
